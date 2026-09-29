@@ -4,7 +4,7 @@ metadata:
   name: tolerations-demo
 spec:
   nodeSelector:
-    topology.kubernetes.io/zone: us-east-1d
+    topology.kubernetes.io/zone: us-east-1d #PRACTICAL OBSERVATION this pod is created in another node in which node is not tainted in us-east-1d, it is not scheduling in other us-east-1b
   containers:
   - name: nginx
     image: nginx
