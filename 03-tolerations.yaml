@@ -1,7 +1,7 @@
 kind: Pod
 apiVersion: v1
 metadata:
-  name: taint
+  name: Tolerations
 spec:
   nodeSelector:
     topology.kubernetes.io/zone: us-east-1d
@@ -10,6 +10,6 @@ spec:
     image: nginx
   tolerations:
   - key: "hardware"
-    operator: "equal"
+    operator: "Equal"
     value: "gpu"
     effect: "NoExecute"
