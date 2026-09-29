@@ -5,7 +5,7 @@ metadata:
 spec:
   affinity:
     nodeAffinity:
-      requireDuringSchedulingIgnoreDuringExecution:
+      requiredDuringSchedulingIgnoredDuringExecution:
         nodeSelectorTerms:
         - matchExpressions:
            - key: "hardware"
